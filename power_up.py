@@ -7,4 +7,4 @@ class PowerUp(metaclass=ABCMeta, Component):
         self.component = component
 
     def calculate_damage(self) -> float:
-        raise NotImplementedError
+        return self.component.calculate_damage()
