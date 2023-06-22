@@ -1,6 +1,6 @@
-from power_up import PowerUp
+from item import Item
 
 
-class Sword(PowerUp):
+class Sword(Item):
     def calculate_damage(self) -> float:
         return super().calculate_damage() + 10
